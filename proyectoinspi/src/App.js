@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import { Login } from './componentes/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hola mundo david</h1>
-      
+    <div>
+      <Login />
     </div>
+    
   );
 }
 
