@@ -3,11 +3,19 @@ body {
     font-weight: normal;
     font-size: 100%;
     color: #1b262c;
-    
+    background-image: url('./image/fondo6.png');
+    background-size:cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
     margin: 0;
-    background-color: white;
+    /* background-color: rgba(8, 8, 110, 0.699); */
 }
-
+@media (max-width: 768px) {
+    body {
+        background-size: cover;  /* Continúa usando cover para asegurar cobertura total */
+        background-position: center center;  /* Centra la imagen de fondo */
+    }
+}
 #contenedor {
     display: flex;
     align-items: center;
@@ -22,7 +30,7 @@ body {
 }
 
 #central {
-    max-width: 320px;
+    max-width: 350px;
     width: 100%;
 }
 
@@ -36,15 +44,12 @@ body {
 #login {
     width: 100%;
     padding: 50px 30px;
-    background-color: #E5E8EA;
+   /*  background-color: #E5E8EA; */
     
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+    
+   /*  border-radius: 5px 5px 5px 5px; */
+    
     
     box-sizing: border-box;
 }
@@ -63,10 +68,12 @@ body {
     
     box-sizing: border-box;
     
-    border: none;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+    /* border: none; */
+    box-sizing: border-box;
+    
+    border: 1px solid #dcdfe0; /* Define el grosor, estilo y color del borde */
+    border-radius: 5px; /* Define un borde redondeado en todas las esquinas */ 
+    
 }
 
 #login input::placeholder {
