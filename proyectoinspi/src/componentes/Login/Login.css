@@ -48,7 +48,7 @@ body {
     
     
     
-   /*  border-radius: 5px 5px 5px 5px; */
+    /* border-radius: 5px 5px 5px 5px; */
     
     
     box-sizing: border-box;
@@ -56,7 +56,7 @@ body {
 
 #login input {
     font-family: 'Overpass', sans-serif;
-    font-size: 110%;
+    font-size: 100%;
     color: #1b262c;
     
     display: block;
@@ -71,9 +71,26 @@ body {
     /* border: none; */
     box-sizing: border-box;
     
-    border: 1px solid #dcdfe0; /* Define el grosor, estilo y color del borde */
+    border: 2px solid #0f4c75; /* Define el grosor, estilo y color del borde */
     border-radius: 5px; /* Define un borde redondeado en todas las esquinas */ 
     
+}
+.input-icon {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-icon input {
+    width: 100%;
+    padding-right: 30px; /* espacio para el icono */
+}
+
+.input-icon i {
+    position: absolute;
+    right: 10px; /* distancia del borde derecho del input */
+    top: 50%; /* centra el icono verticalmente */
+    transform: translateY(-50%); /* ajuste fino de la posición vertical */
+    color: #555; /* color del icono */
 }
 
 #login input::placeholder {
